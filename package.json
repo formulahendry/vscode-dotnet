@@ -1,8 +1,8 @@
 {
     "name": "dotnet",
     "displayName": ".NET Core Tools",
-    "description": "Fast way to build, run and test .NET Core project",
-    "version": "0.0.1",
+    "description": "Fast way to build, run and test .NET Core (C#, F#) project",
+    "version": "0.0.2",
     "publisher": "formulahendry",
     "icon": "logo.png",
     "engines": {
@@ -15,7 +15,7 @@
         "dotnet",
         "Dot Net",
         "csharp",
-        "C#",
+        "fsharp",
         ".NET Core"
     ],
     "bugs": {
@@ -60,6 +60,21 @@
                 },
                 {
                     "when": "resourceExtname == .csproj",
+                    "command": "dotnet.test",
+                    "group": "navigation@12"
+                },
+                {
+                    "when": "resourceExtname == .fsproj",
+                    "command": "dotnet.build",
+                    "group": "navigation@10"
+                },
+                {
+                    "when": "resourceExtname == .fsproj",
+                    "command": "dotnet.run",
+                    "group": "navigation@11"
+                },
+                {
+                    "when": "resourceExtname == .fsproj",
                     "command": "dotnet.test",
                     "group": "navigation@12"
                 }

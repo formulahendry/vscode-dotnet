@@ -6,7 +6,7 @@
 
 ## Usage
 
-* Open a .NET Core project, right click on a `.csproj` file, and run .NET Core command from context menu.
+* Open a .NET Core project, right click on a `.csproj` or `.fsproj` file, and run .NET Core command from context menu.
 
 ![test-explorer](images/usage.png)
 
