@@ -2,7 +2,7 @@
     "name": "dotnet",
     "displayName": ".NET Core Tools",
     "description": "Fast way to build, run and test .NET Core (C#, F#) project",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "formulahendry",
     "icon": "logo.png",
     "engines": {
@@ -77,6 +77,11 @@
                     "when": "resourceExtname == .fsproj",
                     "command": "dotnet.test",
                     "group": "navigation@12"
+                },
+                {
+                    "when": "resourceExtname == .sln",
+                    "command": "dotnet.build",
+                    "group": "navigation@10"
                 }
             ]
         },
