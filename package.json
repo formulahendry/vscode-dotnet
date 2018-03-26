@@ -51,37 +51,37 @@
             "explorer/context": [{
                     "when": "resourceExtname == .csproj",
                     "command": "dotnet.build",
-                    "group": "navigation@10"
+                    "group": "navigation@1"
                 },
                 {
                     "when": "resourceExtname == .csproj",
                     "command": "dotnet.run",
-                    "group": "navigation@11"
+                    "group": "navigation@2"
                 },
                 {
                     "when": "resourceExtname == .csproj",
                     "command": "dotnet.test",
-                    "group": "navigation@12"
+                    "group": "navigation@3"
                 },
                 {
                     "when": "resourceExtname == .fsproj",
                     "command": "dotnet.build",
-                    "group": "navigation@10"
+                    "group": "navigation@1"
                 },
                 {
                     "when": "resourceExtname == .fsproj",
                     "command": "dotnet.run",
-                    "group": "navigation@11"
+                    "group": "navigation@2"
                 },
                 {
                     "when": "resourceExtname == .fsproj",
                     "command": "dotnet.test",
-                    "group": "navigation@12"
+                    "group": "navigation@3"
                 },
                 {
                     "when": "resourceExtname == .sln",
                     "command": "dotnet.build",
-                    "group": "navigation@10"
+                    "group": "navigation@1"
                 }
             ]
         },
