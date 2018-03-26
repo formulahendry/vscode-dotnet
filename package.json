@@ -2,7 +2,7 @@
     "name": "dotnet",
     "displayName": ".NET Core Tools",
     "description": "Fast way to build, run and test .NET Core (C#, F#) project",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "publisher": "formulahendry",
     "icon": "logo.png",
     "engines": {
