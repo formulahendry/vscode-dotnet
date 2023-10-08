@@ -13,6 +13,10 @@ export function activate(context: vscode.ExtensionContext) {
         Dotnet.run(fileUri);
     }));
 
+    context.subscriptions.push(vscode.commands.registerCommand("dotnet.watch", (fileUri: vscode.Uri) => {
+        Dotnet.watch(fileUri);
+    }));
+
     context.subscriptions.push(vscode.commands.registerCommand("dotnet.test", (fileUri: vscode.Uri) => {
         Dotnet.test(fileUri);
     }));

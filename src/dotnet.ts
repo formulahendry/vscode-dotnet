@@ -19,6 +19,13 @@ export class Dotnet {
         }
     }
 
+    public static watch(fileUri: vscode.Uri) {
+        if (fileUri && fileUri.fsPath) {
+            Executor.runInTerminal(`dotnet watch --project "${fileUri.fsPath}"`);
+            AppInsightsClient.sendEvent("watch", { fileExtension: path.extname(fileUri.fsPath) });
+        }
+    }
+
     public static test(fileUri: vscode.Uri) {
         if (fileUri && fileUri.fsPath) {
             Executor.runInTerminal(`dotnet test "${fileUri.fsPath}"`);

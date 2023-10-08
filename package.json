@@ -43,6 +43,10 @@
                 "title": "Run .NET Core project"
             },
             {
+                "command": "dotnet.watch",
+                "title": "Watch .NET Core project"
+            },
+            {
                 "command": "dotnet.test",
                 "title": "Execute .NET Core tests"
             }
@@ -60,8 +64,13 @@
                 },
                 {
                     "when": "resourceExtname == .csproj",
-                    "command": "dotnet.test",
+                    "command": "dotnet.watch",
                     "group": "navigation@3"
+                },
+                {
+                    "when": "resourceExtname == .csproj",
+                    "command": "dotnet.test",
+                    "group": "navigation@4"
                 },
                 {
                     "when": "resourceExtname == .fsproj",
@@ -75,8 +84,13 @@
                 },
                 {
                     "when": "resourceExtname == .fsproj",
-                    "command": "dotnet.test",
+                    "command": "dotnet.watch",
                     "group": "navigation@3"
+                },
+                {
+                    "when": "resourceExtname == .fsproj",
+                    "command": "dotnet.test",
+                    "group": "navigation@4"
                 },
                 {
                     "when": "resourceExtname == .sln",
